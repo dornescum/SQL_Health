@@ -21,3 +21,5 @@ data/*.dump
 
 # OS
 .DS_Store
+
+/docs
