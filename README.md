@@ -29,10 +29,6 @@ Stack: Docker (MySQL) + Jupyter Lab + pandas + SQLAlchemy + matplotlib/plotly.
 ## Repo layout
 
 ```
-docs/                 Setup notes and the SQL query reference
-  project.md              Local setup: Docker MySQL, Python env, Jupyter
-  Client_Querires.md       Query reference (CTEs, window functions, a
-                           transaction, and a view) scoped to client data
 notebooks/            Jupyter notebooks that run the queries against the DB
 sql/                  Query files organized by SQL feature showcased
   ctes/
@@ -43,8 +39,6 @@ requirements.txt      Python dependencies
 ```
 
 ## Setup
-
-Full walkthrough in [`docs/project.md`](docs/project.md). Short version:
 
 ```bash
 python3 -m venv .venv
@@ -75,8 +69,7 @@ notebook against a live DB, without needing a screenshot.
 
 ## Query reference
 
-[`docs/Client_Querires.md`](docs/Client_Querires.md) is the canonical list of
-queries this project implements, grouped by domain:
+This project implements queries grouped by domain:
 
 1. **User / client profile** — active clients by location, signups over time
    with running totals, blocked-client audit, activity-recency ranking
