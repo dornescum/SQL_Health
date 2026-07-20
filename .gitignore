@@ -1,0 +1,23 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Python virtual environment
+sql-project/
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data / dumps (may contain real data before anonymization)
+data/*.sql
+data/*.dump
+
+# OS
+.DS_Store
