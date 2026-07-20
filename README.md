@@ -1,6 +1,6 @@
 # SQL_Health
 
-A SQL portfolio project built on an anonymized clone of a real nutrition/health
+A SQL portfolio project built on an anonymized clone of a imaginary nutrition/health
 app's MySQL database. It showcases CTEs, window functions, transactions, and
 views through queries scoped to the app's "client" domain (profiles, payments,
 first-visit intake funnel), explored via Jupyter notebooks.
