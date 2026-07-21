@@ -2,7 +2,6 @@ create table users (
     id int auto_increment primary key,
     uid char(32) not null,
     name varchar(100) not null,
-    surname varchar(100) not null,
     email varchar(255) not null,
     sex tinyint null,
     country varchar(100) null,

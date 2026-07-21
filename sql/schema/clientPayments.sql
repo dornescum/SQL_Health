@@ -12,7 +12,6 @@ create table client_payments (
     currency_exchange_rate decimal(10, 6) default 1.000000 null,
     session_id varchar(255) not null,
     payment_method varchar(50) null,
-    notes text null,
     created_at timestamp default CURRENT_TIMESTAMP null,
     updated_at timestamp default CURRENT_TIMESTAMP null on update CURRENT_TIMESTAMP,
     constraint visit_id unique (visit_id),

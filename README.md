@@ -81,7 +81,7 @@ This project implements queries grouped by domain:
 2. **Payments & revenue** — monthly revenue trends, payment status funnel,
    visit-eligibility rules, top-paying clients, a payment-confirmation
    transaction
-3. **First-visit ("Prima Visita") funnel** — per-client completion %,
+3. **First-visit** — per-client completion %,
    drop-off by section, time-to-lock, pathology prevalence, and a
    headline `v_client_visit_summary` view
 
