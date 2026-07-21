@@ -1,0 +1,32 @@
+services:
+  mysql:
+    image: mysql:8
+    container_name: sql_project_mysql
+    restart: "no"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${ROOT}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASS}
+    ports:
+      - "${DB_PORT}:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./data:/docker-entrypoint-initdb.d:ro
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: sql_project_phpmyadmin
+    platform: linux/amd64
+    restart: "no"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: ${ROOT}
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+
+volumes:
+  mysql_data:
